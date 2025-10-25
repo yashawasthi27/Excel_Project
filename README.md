@@ -1,5 +1,5 @@
 # Excel_Project
-dynamic Excel dashboard to analyze and visualize data domain job salaries. Features interactive filters for job title, country, and type, with real-time KPIs.
+Dynamic Excel dashboard to analyze and visualize data domain job salaries. Features interactive filters for job title, country, and type, with real-time KPIs.
 ## Features
 
 * **Dynamic Filters:** Users can filter the entire dashboard in real-time using three dropdown menus:
