@@ -1,36 +1,79 @@
-# Excel_Project
-Dynamic Excel dashboard to analyze and visualize data domain job salaries. Features interactive filters for job title, country, and type, with real-time KPIs.
+# Excel Salary Dashboard
+
+## About This Project
+
+The data jobs market is difficult to navigate — salaries vary significantly across roles, 
+countries, and employment types, making it hard to benchmark compensation without a 
+structured way to compare. This project addresses that gap.
+
+I built a fully interactive salary dashboard in Microsoft Excel that lets job seekers 
+explore compensation trends across the data industry — no plugins, no external tools, 
+just native Excel features. The dashboard is driven by three dynamic filters (job title, 
+country, and employment type) that instantly update every chart, map, and KPI on the page.
+
+Whether you're a Data Analyst benchmarking your salary, a Data Scientist evaluating an 
+offer from another country, or a student identifying which specialisation pays best — 
+this dashboard delivers a real-time, data-driven answer.
+
+The dataset contains real-world data science job postings from 2023, covering job titles, 
+salaries, locations, and employment types. The core technical challenge was building a 
+calculation engine that reacts instantly to any filter combination — achieved by chaining 
+modern Excel functions like `XLOOKUP`, `FILTER`, and `SORT` with conditional aggregation 
+using `MEDIAN`+`IF` to recompute every metric dynamically on each filter change, without 
+PivotTables or Power Query.
+
+---
+
+## Dashboard Preview
+
+![Dashboard Preview](DashBoad.png)
+
+---
+
 ## Features
 
-* **Dynamic Filters:** Users can filter the entire dashboard in real-time using three dropdown menus:
-    * Job Title (e.g., Data Engineer, Data Scientist)
-    * Country
-    * Employment Type (e.g., Full-time, Contractor)
-* **Interactive Visualizations:**
-    * **Salary by Job Title:** A bar chart that updates to show salary ranges for related roles.
-    * **Salary by Location:** A choropleth map that visualizes data geographically.
-    * **Salary by Type:** A bar chart comparing salaries across different employment types.
-* **Custom KPIs:** Three main key performance indicators (KPIs) automatically update based on the selected filters:
-    * **Median Salary:** Calculates the median salary for the filtered criteria.
-    * **Top Job Platform:** Identifies the most common platform for the job postings.
-    * **Job Count:** Shows the total number of job listings that match the filters.
+**Dynamic Filters** — Three dropdown menus update the entire dashboard in real-time:
+- Job Title (e.g., Data Engineer, Data Scientist)
+- Country
+- Employment Type (e.g., Full-time, Contractor)
+
+**Interactive Visualizations:**
+- **Salary by Job Title** — Horizontal bar chart showing median salary ranges across roles
+- **Salary by Location** — Choropleth map for geographic salary comparison  
+- **Salary by Employment Type** — Bar chart comparing salaries across contract types
+
+**KPIs** — Three key metrics that auto-update based on active filters:
+- **Median Salary** — Median salary for the filtered selection
+- **Top Job Platform** — Most common platform for matching job postings
+- **Job Count** — Total listings matching the active filters
 
 ---
 
 ## Technical Details
 
-This dashboard was built in Excel without plugins, relying on modern formulas and features:
+Built entirely in Excel — no plugins or add-ins used.
 
-* **Formulas & Functions:** The dashboard's logic is driven by a combination of advanced functions, including:
-    * `XLOOKUP`
-    * `FILTER`
-    * `SORT`
-    * `COUNTIFS`
-    * `MEDIANIF`
-    * `IF`
-    * `ISNUMBER`
-    * `SUBSTITUTE`
-* **Data Validation:** Used to create the dynamic, searchable dropdown filters.
-* **Conditional Formatting:** Applied to visualizations for better readability.
-* **Named Ranges:** Used extensively for clean formulas and easy maintenance.
-* **Performance:** Formulas were structured to ensure the dashboard remains fast and responsive despite complex calculations.
+**Formulas & Functions:**
+`XLOOKUP` · `FILTER` · `SORT` · `COUNTIFS` · `MEDIAN` (with IF logic) · `IF` · 
+`ISNUMBER` · `SUBSTITUTE`
+
+**Excel Features Used:**
+- **Data Validation** — Searchable, dynamic dropdown filters
+- **Conditional Formatting** — Enhanced chart and table readability
+- **Named Ranges** — Clean, maintainable formula structure
+
+---
+
+## Dataset
+
+Real-world data science job postings from 2023. Includes job titles, salaries, 
+locations, and employment types across multiple countries and platforms.
+
+---
+
+## Skills Demonstrated
+
+- End-to-end dashboard design and layout in Excel
+- Advanced formula logic for dynamic filtering and aggregation
+- Data visualization using charts and geographic maps
+- KPI computation without external tools, plugins, or Power Query
