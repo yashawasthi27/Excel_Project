@@ -6,15 +6,6 @@ The data jobs market is difficult to navigate — salaries vary significantly ac
 countries, and employment types, making it hard to benchmark compensation without a 
 structured way to compare. This project addresses that gap.
 
-I built a fully interactive salary dashboard in Microsoft Excel that lets job seekers 
-explore compensation trends across the data industry — no plugins, no external tools, 
-just native Excel features. The dashboard is driven by three dynamic filters (job title, 
-country, and employment type) that instantly update every chart, map, and KPI on the page.
-
-Whether you're a Data Analyst benchmarking your salary, a Data Scientist evaluating an 
-offer from another country, or a student identifying which specialisation pays best — 
-this dashboard delivers a real-time, data-driven answer.
-
 The dataset contains real-world data science job postings from 2023, covering job titles, 
 salaries, locations, and employment types. The core technical challenge was building a 
 calculation engine that reacts instantly to any filter combination — achieved by chaining 
